@@ -2,7 +2,7 @@ import io, math
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from ipywidgets import interactive,interact, HBox, Layout,VBox
+from ipywidgets import interactive, interact
 import ipywidgets as widgets
 
 df = pd.read_csv(io.StringIO('''
