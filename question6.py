@@ -69,7 +69,10 @@ def new_ticket_quantity(var: str=None, p: float=0.0, PT: bool=False) -> float:
     # Return rounded up version of q
     return math.ceil(q)
 
-def percentage_change(p: float=0.0, var: str=None, PT: int=0) -> float:
+def percentage_change(p: float=0.0, var: str=None, PT: bool=False) -> float:
+    if PT:
+        PT = 50000
+               
     # Get new quantity
     new = new_ticket_quantity(p=p, var=var, PT=PT)
 
