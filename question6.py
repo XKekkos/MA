@@ -81,7 +81,7 @@ def percentage_change(p: float=0.0, var: str=None, PT: int=0) -> float:
 
 
 def plot_differences():
-    %matplotlib inline
+    # %matplotlib inline
     @interact(var=widgets.Dropdown(options=options,
                                 value=options[0],
                                 description='Variable'),
